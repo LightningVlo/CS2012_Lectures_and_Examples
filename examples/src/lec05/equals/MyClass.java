@@ -1,8 +1,10 @@
 package lec05.equals;
 
 public class MyClass {
-	int x;
-	int y;
+	private int x;
+	private int y;
+	private String s;
+	private int[] arr;
 	
 	
 	public MyClass() {
@@ -17,16 +19,36 @@ public class MyClass {
 
 	@Override
 	public boolean equals(Object obj) {
-		MyClass mc = (MyClass)obj;
-	
-		if (this.x == mc.x && this.y == mc.y) {
-			return true;
+		MyClass mc = null;
+
+		//Check to see if you can do the casting first.
+		if (obj instanceof MyClass) {
+			mc = (MyClass)obj;
 		}
 		else {
 			return false;
 		}
+
+		boolean xyEqual = (this.x == mc.x && this.y == mc.y);
+
+		if (!xyEqual) {
+			return false;
+		}
+
+		if (!this.s.equals(mc.s)) {
+			return false;
+		}
+
+		if (this.arr.length != mc.arr.length) {
+			return false;
+		}
+
+		for (int i = 0 ; i < this.arr.length && i < mc.arr.length ; i++)  {
+			if (this.arr[i] != mc.arr[i]) {
+				return false;
+			}
+		}
+
+		return true;
 	}
-	
-	
-	
 }
