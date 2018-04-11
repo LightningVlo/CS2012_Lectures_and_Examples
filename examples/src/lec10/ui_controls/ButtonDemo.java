@@ -16,9 +16,9 @@ public class ButtonDemo extends Application {
   protected BorderPane getPane() {
     HBox paneForButtons = new HBox(20);
     Button btLeft = new Button("Left", 
-      new ImageView("image/left.gif"));
+      new ImageView("lec10/image/left.gif"));
     Button btRight = new Button("Right", 
-      new ImageView("image/right.gif"));   
+      new ImageView("lec10/image/right.gif"));
     paneForButtons.getChildren().addAll(btLeft, btRight);
     paneForButtons.setAlignment(Pos.CENTER);
     paneForButtons.setStyle("-fx-border-color: green");

@@ -14,7 +14,7 @@ public class MouseEventDemo extends Application {
     Text text = new Text(20, 20, "Programming is fun");
     pane.getChildren().addAll(text);
    
-    text.setOnMouseDragged(e -> {       
+    pane.setOnMouseDragged(e -> {
       text.setX(e.getX());
       text.setY(e.getY());
     });

@@ -13,7 +13,7 @@ public class TextAreaDemo extends Application {
     // Set title, text and image in the description pane
     descriptionPane.setTitle("Canada");
     String description = "The Canadian national flag ...";
-    descriptionPane.setImageView(new ImageView("image/ca.gif"));
+    descriptionPane.setImageView(new ImageView("lec10/image/ca.gif"));
     descriptionPane.setDescription(description);
 
     // Create a scene and place it in the stage

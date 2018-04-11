@@ -13,19 +13,19 @@ public class ComboBoxDemo extends Application {
 	// Declare an array of Strings for flag titles
 	private String[] flagTitles = {"Canada", "China", "Denmark", 
 			"France", "Germany", "India", "Norway", "United Kingdom",
-	"United States of America"};
+	/*"United States of America"*/};
 
 	// Declare an ImageView array for the national flags of 9 countries
 	private ImageView[] flagImage = {
-			new ImageView("image/ca.gif"),
-			new ImageView("image/china.gif"), 
-			new ImageView("image/denmark.gif"), 
-			new ImageView("image/fr.gif"), 
-			new ImageView("image/germany.gif"),
-			new ImageView("image/india.gif"), 
-			new ImageView("image/norway.gif"),
-			new ImageView("image/uk.gif"), 
-			new ImageView("image/us.gif")
+			new ImageView("lec10/image/ca.gif"),
+			new ImageView("lec10/image/china.gif"),
+			new ImageView("lec10/image/denmark.gif"),
+			new ImageView("lec10/image/fr.gif"),
+			new ImageView("lec10/image/germany.gif"),
+			new ImageView("lec10/image/india.gif"),
+			new ImageView("lec10/image/norway.gif"),
+			new ImageView("lec10/image/uk.gif"),
+			new ImageView("lec10/image/us.gif")
 	};
 
 	// Declare an array of strings for flag descriptions
@@ -60,7 +60,7 @@ public class ComboBoxDemo extends Application {
 		paneForComboBox.setLeft(new Label("Select a country: "));
 		paneForComboBox.setCenter(cbo);
 		pane.setTop(paneForComboBox);
-		cbo.setPrefWidth(400);
+		//cbo.setPrefWidth(400);
 		cbo.setValue("Canada");
 
 		ObservableList<String> items = 

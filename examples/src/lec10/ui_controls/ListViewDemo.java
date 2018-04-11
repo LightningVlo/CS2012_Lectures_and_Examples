@@ -18,15 +18,15 @@ public class ListViewDemo extends Application {
 
   // Declare an ImageView array for the national flags of 9 countries
   private ImageView[] ImageViews = {
-    new ImageView("image/ca.gif"),
-    new ImageView("image/china.gif"),
-    new ImageView("image/denmark.gif"),
-    new ImageView("image/fr.gif"),
-    new ImageView("image/germany.gif"),
-    new ImageView("image/india.gif"),
-    new ImageView("image/norway.gif"),
-    new ImageView("image/uk.gif"),
-    new ImageView("image/us.gif")
+    new ImageView("lec10/image/ca.gif"),
+    new ImageView("lec10/image/china.gif"),
+    new ImageView("lec10/image/denmark.gif"),
+    new ImageView("lec10/image/fr.gif"),
+    new ImageView("lec10/image/germany.gif"),
+    new ImageView("lec10/image/india.gif"),
+    new ImageView("lec10/image/norway.gif"),
+    new ImageView("lec10/image/uk.gif"),
+    new ImageView("lec10/image/us.gif")
   };
 
   @Override // Override the start method in the Application class
@@ -34,7 +34,7 @@ public class ListViewDemo extends Application {
     ListView<String> lv = new ListView<>
       (FXCollections.observableArrayList(flagTitles));
     lv.setPrefSize(400, 400);
-    lv.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
+    lv.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
     
     // Create a pane to hold image views
     FlowPane imagePane = new FlowPane(10, 10);
